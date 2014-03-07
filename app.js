@@ -10,7 +10,10 @@ var url = 'https://gu-trigger.herokuapp.com',
 (function load() {
     user.userId = localStorage.getItem('gu:trigger:userId');
     user.displayName = localStorage.getItem('gu:trigger:displayName');
-    connect();
+
+    if (user.userId) {
+        connect();
+    }
 })();
 
 function storeUser(user) {
