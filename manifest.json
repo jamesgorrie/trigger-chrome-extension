@@ -1,0 +1,29 @@
+{ 
+  "manifest_version": 2,
+
+  "name": "Guardian Trigger",
+  "description": "Get replies to your comments on your desktop.",
+  "version": "0.1",
+
+  "background": {
+    "persistent": true,
+    "page": "background.html"
+  },
+
+  "icons": { "48": "logo.png" },
+  "web_accessible_resources": ["logo.png"],
+
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "http://gu-trigger.herokuapp.com/*",
+    "https://discussion-secure.guardianapis.com/*",
+    "storage",
+    "notifications"
+  ],
+
+  "content_security_policy": "script-src 'self' https://discussion-secure.guardianapis.com https://gu-trigger.herokuapp.com; object-src 'self';"
+}

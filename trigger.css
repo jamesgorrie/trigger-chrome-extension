@@ -1,0 +1,30 @@
+body {
+	padding: 5px;
+	width: 350px;
+}
+
+.logo {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.set-username {
+	display: inline-block;
+}
+
+.tools {
+	font-size: 11px;
+	margin: 10px 0;
+	float: right;
+}
+
+.tools a {
+	color: #ccc;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.tools a:first-child {
+	margin-left: 0;
+}
