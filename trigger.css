@@ -20,7 +20,7 @@ body {
 }
 
 .tools a {
-	color: #ccc;
+	color: #333;
 	display: inline-block;
 	margin-left: 10px;
 }
@@ -28,3 +28,18 @@ body {
 .tools a:first-child {
 	margin-left: 0;
 }
+
+#connection-status {
+	background: #ccc;
+	border-radius: 5px;
+	margin-left: 5px;
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	vertical-align: center;
+}
+
+#connection-status.status--connected { background: green; }
+#connection-status.status--disconnected { background: red; }
+
+#disconnect, #ping { display: none; }

@@ -178,6 +178,10 @@ function supportNotifications() {
     }
 }
 
+function connected(c) {
+    return c(socket && socket.socket.connected);
+}
+
 
 ///// parsers /////
 
